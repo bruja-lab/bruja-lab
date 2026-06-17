@@ -1,16 +1,17 @@
-## Hi there 👋
+# 👋 Hi, I'm buja-lab | SecOps & Infrastructure Engineer
 
-<!--
-**bruja-lab/bruja-lab** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+I build secure systems, harden local host environments, and orchestrate privacy-focused, air-gapped automation frameworks.
 
-Here are some ideas to get you started:
+## 🛠️ Tech Stack & Lab Environment
+- **Languages:** Python, Bash, Markdown
+- **AI/ML:** Local Model Deployment (Ollama), Custom Modelfiles
+- **Security & Forensics:** macOS Hardening, Network Traffic Auditing, Interface Isolation
+- **Tools:** Obsidian, Git, GitHub Actions
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## 🔬 Featured Lab Repositories
+- **[athenapsyche-secops-lab](https://github.com)**: A local, air-gapped security orchestrator running a Python GUI coupled with localized AI modeling.
+- **[macos-system-hardening](https://github.com)**: Forensic logs, low-level interface mappings, and perimeter defense configurations.
+
+---
+*Currently mapping complex systems and documenting security workflows. Welcome to the lab.*
+
