@@ -1,4 +1,4 @@
-# 👋 Hi, I'm buja-lab | SecOps & Infrastructure Engineer
+# 👋 Hi, I'm bruja-lab | SecOps & Infrastructure Engineer
 
 I build secure systems, harden local host environments, and orchestrate privacy-focused, air-gapped automation frameworks.
 
