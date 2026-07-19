@@ -1,11 +1,11 @@
-# 👋 Hi, I'm bruja-lab | SecOps & Infrastructure Engineer
+# 👋 Hi, I'm bruja-lab | Software Engineer & AI Systems
 
-I build secure systems, harden local host environments, and orchestrate privacy-focused, air-gapped automation frameworks.
+I build deterministic software systems, orchestrate privacy-focused, air-gapped AI frameworks, and design zero-trust lab architectures.
 
 ## 🛠️ Tech Stack & Lab Environment
-- **Languages:** Python, Bash, Markdown
-- **AI/ML:** Local Model Deployment (Ollama), Custom Modelfiles
-- **Security & Forensics:** macOS Hardening, Network Traffic Auditing, Interface Isolation
+- **Languages:** Python (Pandas, NumPy, Matplotlib, NLTK, Regex, OS/Subprocess), Bash, Markdown, C++, Object-Oriented Programming, NLP Data Pipelines
+- **AI & Systems:**  Local LLM Orchestration, Stateful Memory Layers, GGUF Weight Customization, Virtualization, Linux (Kali)
+- **Security & Forensics:** macOS Hardening, Network Traffic Auditing, Interface Isolation, Zero-Trust Architecture (pfSense/OPNsense), Wireshark, Cisco IOS, Layer 2/3 Switching.
 - **Tools:** Obsidian, Git, GitHub Actions
 
 ## 🔬 Featured Lab Repositories
@@ -57,8 +57,7 @@ I build secure systems, harden local host environments, and orchestrate privacy-
 *   **Core Matrix:** An introspective systems audit analyzing the linguistic transition from real-world vocal synthesis to formalized academic composition frameworks.
 *   **Systems Engineering Vector:** Evaluates the communicative barriers of static text execution pipelines vs. dynamic face-to-face feedback loops. Implements precise environmental optimizations to mitigate time-induced cognitive latency (the timed-clock execution freeze), detailing a programmatic roadmap to approach analytical documentation with a crisp, clear, and un-obscured logic.
 
---
-### 🧠 [System Architecture Evolution] Cross-Session Global Memory Allocation Metrics
+--### 🧠 🧠 [System Architecture Evolution] Project Filidity: Cross-Session Global Memory Allocation Metrics
 *   **Core Matrix:** An infrastructure engineering blueprint detailing the implementation of an stateful memory persistence layer within an air-gapped environment.
 *   **Systems Engineering Vector:** Bypasses traditional stateless LLM generation limits by routing concurrent interaction logs through a global shared-context database matrix. Enables the offline engine to maintain cross-operator tactical awareness, tracking security configurations and structural lab baselines seamlessly across independent user-session toggles.
 
