@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,131 +7,265 @@
     <title>Krystle Hamlett | Software Engineer & AI Systems Portfolio</title>
     <style>
         :root {
-            --bg-primary: #0a0a0c;
-            --bg-surface: #121216;
+            --bg-deep: #060608;
+            --bg-surface: rgba(16, 16, 24, 0.75);
             --accent-glow: #00ffcc;
             --accent-matrix: #ff007f;
-            --text-main: #e2e8f0;
-            --text-muted: #cbd5e1; /* WCAG AAA Compliance Contrast */
+            --text-main: #f1f5f9;
+            --text-muted: #94a3b8;
+            --border-glow: rgba(0, 255, 204, 0.15);
         }
 
         body {
-            background-color: var(--bg-primary);
+            background-color: var(--bg-deep);
+            background-image: 
+                linear-gradient(rgba(0, 255, 204, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 255, 204, 0.03) 1px, transparent 1px);
+            background-size: 30px 30px;
             color: var(--text-main);
-            font-family: 'Consolas', 'Courier New', monospace;
+            font-family: 'SF Mono', 'Consolas', 'Courier New', monospace;
             margin: 0;
             padding: 0;
             line-height: 1.6;
         }
 
         header {
-            background-color: var(--bg-surface);
-            border-bottom: 2px solid var(--accent-glow);
-            padding: 2.5rem 1rem;
+            background: linear-gradient(180deg, rgba(10, 10, 15, 0.9) 0%, transparent 100%);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border-glow);
+            padding: 3.5rem 1rem 2.5rem 1rem;
             text-align: center;
+            position: relative;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 200px;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--accent-glow), transparent);
+            box-shadow: 0 0 12px var(--accent-glow);
         }
 
         .header-title {
-            color: var(--accent-glow);
-            font-size: 2.2rem;
+            color: var(--text-main);
+            font-size: 2.5rem;
             margin: 0;
-            letter-spacing: 2px;
+            letter-spacing: 4px;
+            font-weight: 800;
+            text-shadow: 0 0 10px rgba(241, 245, 249, 0.3);
         }
 
         .header-subtitle {
-            color: var(--text-muted);
-            font-size: 1.1rem;
-            margin-top: 0.5rem;
+            color: var(--accent-glow);
+            font-size: 1rem;
+            margin-top: 0.6rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
         }
 
         nav {
             display: flex;
-            gap: 1.5rem;
+            gap: 2rem;
             justify-content: center;
-            margin: 1.5rem 0 0 0;
+            margin: 2rem 0 0 0;
         }
 
         nav a {
-            color: var(--accent-matrix);
+            color: var(--text-muted);
             text-decoration: none;
-            font-weight: bold;
-            font-size: 1rem;
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            padding: 0.4rem 0.8rem;
+            border: 1px solid transparent;
         }
 
         nav a:hover {
-            text-shadow: 0 0 8px var(--accent-matrix);
+            color: var(--accent-glow);
+            border-radius: 4px;
+            background: rgba(0, 255, 204, 0.05);
+            border-color: rgba(0, 255, 204, 0.2);
+            text-shadow: 0 0 8px rgba(0, 255, 204, 0.6);
         }
 
         main {
-            max-width: 1100px;
-            margin: 2rem auto;
-            padding: 0 1.5rem;
+            max-width: 1200px;
+            margin: 3rem auto;
+            padding: 0 2rem;
+        }
+
+        .bio-summary {
+            background: var(--bg-surface);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-left: 4px solid var(--accent-glow);
+            border-radius: 0 8px 8px 0;
+            padding: 2rem;
+            margin-bottom: 4rem;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
         }
 
         .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 1.8rem;
-            margin-top: 1.5rem;
+            grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+            gap: 2.5rem;
+            margin-top: 2rem;
         }
 
         .card {
-            background-color: var(--bg-surface);
-            border: 1px solid #26262b;
-            border-radius: 4px;
-            padding: 1.5rem;
-            transition: border-color 0.3s ease;
+            background: var(--bg-surface);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(0, 255, 204, 0.05) 0%, transparent 100%);
+            opacity: 0;
+            transition: opacity 0.4s ease;
         }
 
         .card:hover {
-            border-color: var(--accent-glow);
+            transform: translateY(-5px);
+            border-color: rgba(0, 255, 204, 0.3);
+            box-shadow: 0 12px 40px 0 rgba(0, 255, 204, 0.1);
+        }
+
+        .card:hover::before {
+            opacity: 1;
         }
 
         .card-tag {
             color: var(--accent-matrix);
-            font-size: 0.85rem;
-            font-weight: bold;
+            font-size: 0.8rem;
+            font-weight: 700;
             text-transform: uppercase;
-            letter-spacing: 1px;
+            letter-spacing: 1.5px;
+            position: relative;
+            z-index: 2;
         }
 
         .card-title {
-            color: var(--accent-glow);
-            font-size: 1.3rem;
-            margin: 0.4rem 0;
+            color: var(--text-main);
+            font-size: 1.4rem;
+            margin: 0.6rem 0 1rem 0;
+            font-weight: 700;
+            position: relative;
+            z-index: 2;
         }
 
         .card-text {
             color: var(--text-muted);
             font-size: 0.95rem;
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .tech-badges-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            position: relative;
+            z-index: 2;
         }
 
         .tech-badge {
-            background-color: #1a1a22;
-            border: 1px solid #33333c;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
             color: var(--text-main);
-            display: inline-block;
-            font-size: 0.8rem;
-            padding: 0.2rem 0.6rem;
-            margin: 0.2rem;
-            border-radius: 3px;
+            font-size: 0.75rem;
+            padding: 0.3rem 0.7rem;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        .card:hover .tech-badge {
+            border-color: rgba(0, 255, 204, 0.2);
+            background: rgba(0, 255, 204, 0.02);
         }
 
         h2 {
-            border-left: 4px solid var(--accent-glow);
+            border-left: 3px solid var(--accent-matrix);
             color: var(--text-main);
-            padding-left: 0.6rem;
-            font-size: 1.6rem;
-            margin-top: 2.5rem;
+            padding-left: 1rem;
+            font-size: 1.8rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-top: 5rem;
+            text-transform: uppercase;
+        }
+
+        .metrics-panel {
+            background: var(--bg-surface);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            padding: 2.5rem;
+            margin-top: 2rem;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .metrics-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .metrics-item {
+            display: flex;
+            align-items: baseline;
+            margin-bottom: 1rem;
+            color: var(--text-muted);
+            font-size: 1rem;
+        }
+
+        .metrics-item::before {
+            content: "▶";
+            color: var(--accent-glow);
+            font-size: 0.8rem;
+            margin-right: 1rem;
+        }
+
+        .metrics-item strong {
+            color: var(--text-main);
+            margin-right: 0.5rem;
         }
 
         footer {
             text-align: center;
-            padding: 3rem 1rem;
-            color: #7f7f7f;
-            font-size: 0.85rem;
-            border-top: 1px solid #1a1a22;
-            margin-top: 4rem;
+            padding: 4rem 1rem;
+            color: rgba(255, 255, 255, 0.2);
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+            border-top: 1px solid rgba(255, 255, 255, 0.03);
+            margin-top: 6rem;
+            text-transform: uppercase;
         }
     </style>
 </head>
@@ -138,19 +273,19 @@
 
     <header>
         <h1 class="header-title">THE ATHENAPSYCHE PORTFOLIO</h1>
-        <div class="header-subtitle">Where System Architecture Meets Cognitive Data Integrity</div>
+        <div class="header-subtitle">SYSTEM ARCHITECTURE ∩ COGNITIVE DATA INTEGRITY</div>
         <nav>
-            <a href="#lab-deployments">[🔬 Lab Deployments]</a>
-            <a href="#systems-synthesis">[🧠 Research Synthesis]</a>
-            <a href="#metrics">[📊 System Analytics]</a>
+            <a href="#lab-deployments">[🔬 Deployments]</a>
+            <a href="#systems-synthesis">[🧠 Research]</a>
+            <a href="#metrics">[📊 Analytics]</a>
         </nav>
     </header>
 
     <main>
         <!-- BIO SUMMARY -->
-        <section class="card" style="border-left: 4px solid var(--accent-glow);">
-            <p style="margin: 0; font-size: 1.05rem;">
-                Dual-degree scholar (<strong>4.0 GPA</strong>) engineering the intersection of hardware routing frameworks and human cognitive structures. Specialized in orchestrating deterministic, completely offline AI architectures, custom natural language memory pipelines, and zero-trust perimeter defense infrastructure.
+        <section class="bio-summary">
+            <p style="margin: 0; font-size: 1.1rem; line-height: 1.8; color: var(--text-main);">
+                Dual-degree computer science and psychology scholar (<strong>4.0 GPA</strong>) designing secure, deterministic local AI orchestration layers and zero-trust perimeter defense infrastructure. Specialized in building portless, air-gapped system pipelines that isolate processing parameters straight to host hardware registers.
             </p>
         </section>
 
@@ -158,88 +293,21 @@
         <section class="grid">
             <!-- PROJECT 1 -->
             <div class="card">
-                <div class="card-tag">AI Engineering // Python</div>
-                <h3 class="card-title">Project Felidity Core Dashboard (v1.7)</h3>
-                <p class="card-text">
-                    Engineered a stateful memory persistence layer for local Large Language Models to bypass stateless query walls. Implemented via raw text-file data streams and Python subprocess execution to guarantee data sovereignty. Features an operational multi-user GUI with hot-swappable theme matrix configurations (Tweed, Ghost, Cyber).
-                </p>
                 <div>
-                    <span class="tech-badge">Ollama Engine</span>
-                    <span class="tech-badge">Python Core</span>
-                    <span class="tech-badge">NLTK</span>
-                    <span class="tech-badge">Tkinter HUD</span>
+                    <div class="card-tag">Systems Logic // C++ Core</div>
+                    <h3 class="card-title">athenapsyche-core-engine</h3>
+                    <p class="card-text">
+                        A bare-metal, dependency-free local AI inference simulation execution layer written from scratch in optimized C++. Implements Attack Surface Reduction by dropping the network adapter stack completely, bypassing traditional web API wrapper vulnerabilities to guarantee absolute host isolation.
+                    </p>
+                </div>
+                <div class="tech-badges-container">
+                    <span class="tech-badge">C++17 Binary</span>
+                    <span class="tech-badge">Matrix Scaling</span>
+                    <span class="tech-badge">Tokenizer Array</span>
+                    <span class="tech-badge">Zero-Network</span>
                 </div>
             </div>
 
             <!-- PROJECT 2 -->
             <div class="card">
-                <div class="card-tag">SecOps // Hardware Infrastructure</div>
-                <h3 class="card-title">"Shadow" Zero-Trust Network Range</h3>
-                <p class="card-text">
-                    Deployed an enterprise-grade local network core using a refurbished Cisco Catalyst 3850 hardware switch. Architected custom inter-VLAN zoning restrictions, 802.1Q encapsulation trunk links, out-of-band serial Link administration, and physical port hardening using hardware sticky MAC address policies.
-                </p>
-                <div>
-                    <span class="tech-badge">Cisco IOS CLI</span>
-                    <span class="tech-badge">Layer 2/3 Switching</span>
-                    <span class="tech-badge">Wireshark</span>
-                    <span class="tech-badge">VM Kali Linux</span>
-                </div>
-            </div>
-
-            <!-- PROJECT 3 -->
-            <div class="card">
-                <div class="card-tag">Data Engineering // Analytics</div>
-                <h3 class="card-title">SPSS Local Pipeline Bypass Engine</h3>
-                <p class="card-text">
-                    Developed a modular Python data parser utility to enforce absolute data sovereignty over behavioral statistic tracking workloads. Replaced subscription cloud-dependent analytical software dependencies with localized array tokenization and visualization engines.
-                </p>
-                <div>
-                    <span class="tech-badge">Pandas Matrix</span>
-                    <span class="tech-badge">NumPy Arrays</span>
-                    <span class="tech-badge">Matplotlib Layouts</span>
-                </div>
-            </div>
-        </section>
-
-        <h2 id="systems-synthesis">🧠 Academic Research & Systems Synthesis</h2>
-        <section class="grid">
-            <!-- PAPER 1 -->
-            <div class="card">
-                <div class="card-tag">Psychobiology ∩ CompSci</div>
-                <h3 class="card-title">The Persistent Loop: PTSD Analysis</h3>
-                <p class="card-text">
-                    Models physiological trauma response states as un-terminable infinite runtime exceptions using the ICD-11 DSO framework. Evaluates how continuous environmental threat inputs weaken hippocampal filing links and completely downregulate prefrontal cortex executive processing brakes.
-                </p>
-            </div>
-
-            <!-- PAPER 2 -->
-            <div class="card">
-                <div class="card-tag">Data Integrity ∩ Theater</div>
-                <h3 class="card-title">The Lossy Compression of Trauma</h3>
-                <p class="card-text">
-                    Deconstructs curated documentary theater formats using digital signal processing algorithms (JPEG/MP3 compression). Analyzes the systematic formatting artifacts introduced when raw human experience variables are pruned into low-resolution public dockets.
-                </p>
-            </div>
-
-            <!-- PAPER 3 -->
-            <div class="card">
-                <div class="card-tag">Human Systems ∩ Operations</div>
-                <h3 class="card-title">Dismantling the Mirage: Runtime Controls</h3>
-                <p class="card-text">
-                    Positions tactical decision-making frameworks (OODA Loops, Operational Risk Management) as defensive runtime protocols designed to intercept and override system-degrading family script illusions, establishing reality-biased communication paths.
-                </p>
-            </div>
-        </section>
-
-        <h2 id="metrics">📊 Core Calibration Metrics</h2>
-        <section class="card">
-            <ul style="list-style-type: square; padding-left: 1.2rem; margin: 0; color: var(--text-muted);">
-                <li style="margin-bottom: 0.5rem;"><strong>Academic Node:</strong> Mt. San Jacinto College (Dual Degree Track: CS & Psychology)</li>
-                <li style="margin-bottom: 0.5rem;"><strong>System Calibration:</strong> Cumulative 4.0 GPA across complex multi-disciplinary loads.</li>
-                <li style="margin-bottom: 0.5rem;"><strong>Operational Load Capability:</strong> Verified threshold of 19+ concurrent credit units per session.</li>
-                <li><strong>Strategic Experience:</strong> Dole Caregiver Fellow (California Representative) — translating macro metrics into federal legislative reform frameworks.</li>
-            </ul>
-        </section>
-    </main>
-
-    <footer>
+Use code with caution.AI Engineering // PythonProject Felidity Core Dashboard (v1.7)Engineered a stateful memory persistence framework for local Large Language Models to bypass stateless amnesia walls. Interfaced via raw text data streams and physical hardware subprocess pipes to prevent data loss. Features an operational multi-theme HUD interface (Tweed, Ghost, Cyber).Ollama DaemonPython RuntimeNLTK PipelinesTkinter UISecOps // Infrastructure"Shadow" Zero-Trust Network Range
