@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -14,6 +13,10 @@
             --text-main: #f1f5f9;
             --text-muted: #94a3b8;
             --border-glow: rgba(0, 255, 204, 0.15);
+        }
+
+        html {
+            scroll-behavior: smooth;
         }
 
         body {
@@ -216,7 +219,8 @@
             font-size: 1.8rem;
             font-weight: 700;
             letter-spacing: 1px;
-            margin-top: 5rem;
+            margin-top: 8rem;
+            padding-top: 2rem;
             text-transform: uppercase;
         }
 
@@ -259,12 +263,12 @@
 
         footer {
             text-align: center;
-            padding: 4rem 1rem;
+            padding: 6rem 1rem;
             color: rgba(255, 255, 255, 0.2);
             font-size: 0.8rem;
             letter-spacing: 2px;
             border-top: 1px solid rgba(255, 255, 255, 0.03);
-            margin-top: 6rem;
+            margin-top: 12rem;
             text-transform: uppercase;
         }
     </style>
@@ -282,7 +286,6 @@
     </header>
 
     <main>
-        <!-- BIO SUMMARY -->
         <section class="bio-summary">
             <p style="margin: 0; font-size: 1.1rem; line-height: 1.8; color: var(--text-main);">
                 Dual-degree computer science and psychology scholar (<strong>4.0 GPA</strong>) designing secure, deterministic local AI orchestration layers and zero-trust perimeter defense infrastructure. Specialized in building portless, air-gapped system pipelines that isolate processing parameters straight to host hardware registers.
@@ -291,51 +294,102 @@
 
         <h2 id="lab-deployments">🔬 Featured Lab Deployments</h2>
         <section class="grid">
-            <!-- PROJECT 1 -->
             <div class="card">
                 <div>
-                    <div class="card-tag">Systems // C++</div>
-                    <h3 class="card-title">Core Engine</h3>
+                    <div class="card-tag">Systems Core // C++</div>
+                    <h3 class="card-title">athenapsyche-core-engine</h3>
                     <p class="card-text">
-                        A local AI inference engine built in C++17, designed for high-performance, bare-metal operations without external network dependencies.
+                        A bare-metal, dependency-free local AI inference simulation execution layer written from scratch in optimized C++. Implements Attack Surface Reduction by dropping the network adapter stack completely, bypassing traditional web API wrapper vulnerabilities to guarantee absolute host isolation.
                     </p>
                 </div>
                 <div class="tech-badges-container">
-                    <span class="tech-badge">C++17</span>
-                    <span class="tech-badge">Inference</span>
+                    <span class="tech-badge">C++17 Binary</span>
+                    <span class="tech-badge">Matrix Scaling</span>
+                    <span class="tech-badge">Tokenizer Array</span>
                     <span class="tech-badge">Zero-Network</span>
                 </div>
             </div>
 
-            <!-- PROJECT 2 -->
             <div class="card">
                 <div>
-                    <div class="card-tag">AI // Python</div>
-                    <h3 class="card-title">LLM Dashboard</h3>
+                    <div class="card-tag">AI Engineering // Python</div>
+                    <h3 class="card-title">Project Felidity Dashboard (v1.7)</h3>
                     <p class="card-text">
-                        A Python-based dashboard for managing local Large Language Models with persistence and a custom UI.
+                        Engineered a stateful memory persistence framework for local Large Language Models to bypass amnesia walls. Interfaced via raw text data streams and physical hardware subprocess pipes to prevent data loss. Features an operational multi-theme HUD interface (Tweed, Ghost, Cyber).
                     </p>
                 </div>
                 <div class="tech-badges-container">
-                    <span class="tech-badge">Ollama</span>
-                    <span class="tech-badge">Python</span>
-                    <span class="tech-badge">Tkinter</span>
+                    <span class="tech-badge">Ollama Daemon</span>
+                    <span class="tech-badge">Python Runtime</span>
+                    <span class="tech-badge">NLTK Pipelines</span>
+                    <span class="tech-badge">Tkinter UI</span>
                 </div>
             </div>
 
-            <!-- PROJECT 3 -->
             <div class="card">
                 <div>
-                    <div class="card-tag">SecOps // Infra</div>
-                    <h3 class="card-title">Local Network Range</h3>
+                    <div class="card-tag">SecOps // Infrastructure</div>
+                    <h3 class="card-title">"Shadow" Network Range</h3>
                     <p class="card-text">
-                        An isolated network lab for simulating enterprise-level security, featuring VLAN zoning and device configuration.
+                        Deployed an enterprise-grade local network core using a physical Cisco Catalyst 3850 hardware switch. Architected custom inter-VLAN zoning restrictions, 802.1Q encapsulation trunk links, out-of-band serial link administration, and hardware-enforced sticky MAC address port security configurations.
                     </p>
                 </div>
                 <div class="tech-badges-container">
-                    <span class="tech-badge">Cisco</span>
-                    <span class="tech-badge">VLAN</span>
-                    <span class="tech-badge">Kali</span>
+                    <span class="tech-badge">Cisco IOS CLI</span>
+                    <span class="tech-badge">Layer 2/3 Switching</span>
+                    <span class="tech-badge">Wireshark Analysis</span>
+                    <span class="tech-badge">Kali Linux</span>
                 </div>
             </div>
         </section>
+
+        <h2 id="systems-synthesis">🧠 Academic Research & Systems Synthesis</h2>
+        <section class="grid">
+            <div class="card">
+                <div>
+                    <div class="card-tag">Psychobiology ∩ CompSci</div>
+                    <h3 class="card-title">The Persistent Loop: PTSD Analysis</h3>
+                    <p class="card-text">
+                        Models physiological trauma response states as un-terminable infinite runtime exceptions using the ICD-11 DSO framework. Evaluates how continuous environmental threat inputs weaken hippocampal filing links and completely downregulate prefrontal cortex executive processing brakes.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div>
+                    <div class="card-tag">Data Integrity ∩ Theater</div>
+                    <h3 class="card-title">The Lossy Compression of Trauma</h3>
+                    <p class="card-text">
+                        Deconstructs curated documentary theater formats using digital signal processing algorithms (JPEG/MP3 compression). Analyzes the systematic formatting artifacts introduced when raw human experience variables are pruned into low-resolution public dockets.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div>
+                    <div class="card-tag">Human Systems ∩ Operations</div>
+                    <h3 class="card-title">Dismantling the Mirage: Runtime Controls</h3>
+                    <p class="card-text">
+                        Positions tactical decision-making frameworks (OODA Loops, Operational Risk Management) as defensive runtime protocols designed to intercept and override system-degrading family script illusions, establishing reality-biased communication paths.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <h2 id="metrics">📊 Core Calibration Metrics</h2>
+        <section class="metrics-panel">
+            <ul class="metrics-list">
+                <li class="metrics-item"><strong>Academic Node:</strong> Mt. San Jacinto College (Dual Degree Track: CS & Psychology)</li>
+                <li class="metrics-item"><strong>System Calibration:</strong> Cumulative 4.0 GPA across complex multi-disciplinary loads.</li>
+                <li class="metrics-item"><strong>Operational Load Capability:</strong> Verified threshold of 19+ concurrent credit units per session.</li>
+                <li class="metrics-item"><strong>Strategic Leadership:</strong> Dole Caregiver Fellow (California Representative) — translating macro metrics into federal legislative reform frameworks.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        --- STATUS: RUNTIME DEPLOYMENT ACTIVE // ZERO-TRUST NODE VERIFIED ---
+    </footer>
+
+</body>
+</html>
