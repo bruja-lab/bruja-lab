@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krystle Hamlett | Software Engineer & AI Systems Portfolio</title>
+    <style>
+        :root {
+            --bg-primary: #0a0a0c;
+            --bg-surface: #121216;
+            --accent-glow: #00ffcc;
+            --accent-matrix: #ff007f;
+            --text-main: #e2e8f0;
+            --text-muted: #cbd5e1; /* WCAG AAA Compliance Contrast */
+        }
+
+        body {
+            background-color: var(--bg-primary);
+            color: var(--text-main);
+            font-family: 'Consolas', 'Courier New', monospace;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--bg-surface);
+            border-bottom: 2px solid var(--accent-glow);
+            padding: 2.5rem 1rem;
+            text-align: center;
+        }
+
+        .header-title {
+            color: var(--accent-glow);
+            font-size: 2.2rem;
+            margin: 0;
+            letter-spacing: 2px;
+        }
+
+        .header-subtitle {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            margin-top: 0.5rem;
+        }
+
+        nav {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            margin: 1.5rem 0 0 0;
+        }
+
+        nav a {
+            color: var(--accent-matrix);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+
+        nav a:hover {
+            text-shadow: 0 0 8px var(--accent-matrix);
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 1.8rem;
+            margin-top: 1.5rem;
+        }
+
+        .card {
+            background-color: var(--bg-surface);
+            border: 1px solid #26262b;
+            border-radius: 4px;
+            padding: 1.5rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .card:hover {
+            border-color: var(--accent-glow);
+        }
+
+        .card-tag {
+            color: var(--accent-matrix);
+            font-size: 0.85rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .card-title {
+            color: var(--accent-glow);
+            font-size: 1.3rem;
+            margin: 0.4rem 0;
+        }
+
+        .card-text {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .tech-badge {
+            background-color: #1a1a22;
+            border: 1px solid #33333c;
+            color: var(--text-main);
+            display: inline-block;
+            font-size: 0.8rem;
+            padding: 0.2rem 0.6rem;
+            margin: 0.2rem;
+            border-radius: 3px;
+        }
+
+        h2 {
+            border-left: 4px solid var(--accent-glow);
+            color: var(--text-main);
+            padding-left: 0.6rem;
+            font-size: 1.6rem;
+            margin-top: 2.5rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem 1rem;
+            color: #7f7f7f;
+            font-size: 0.85rem;
+            border-top: 1px solid #1a1a22;
+            margin-top: 4rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 class="header-title">THE ATHENAPSYCHE PORTFOLIO</h1>
+        <div class="header-subtitle">Where System Architecture Meets Cognitive Data Integrity</div>
+        <nav>
+            <a href="#lab-deployments">[🔬 Lab Deployments]</a>
+            <a href="#systems-synthesis">[🧠 Research Synthesis]</a>
+            <a href="#metrics">[📊 System Analytics]</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- BIO SUMMARY -->
+        <section class="card" style="border-left: 4px solid var(--accent-glow);">
+            <p style="margin: 0; font-size: 1.05rem;">
+                Dual-degree scholar (<strong>4.0 GPA</strong>) engineering the intersection of hardware routing frameworks and human cognitive structures. Specialized in orchestrating deterministic, completely offline AI architectures, custom natural language memory pipelines, and zero-trust perimeter defense infrastructure.
+            </p>
+        </section>
+
+        <h2 id="lab-deployments">🔬 Featured Lab Deployments</h2>
+        <section class="grid">
+            <!-- PROJECT 1 -->
+            <div class="card">
+                <div class="card-tag">AI Engineering // Python</div>
+                <h3 class="card-title">Project Felidity Core Dashboard (v1.7)</h3>
+                <p class="card-text">
+                    Engineered a stateful memory persistence layer for local Large Language Models to bypass stateless query walls. Implemented via raw text-file data streams and Python subprocess execution to guarantee data sovereignty. Features an operational multi-user GUI with hot-swappable theme matrix configurations (Tweed, Ghost, Cyber).
+                </p>
+                <div>
+                    <span class="tech-badge">Ollama Engine</span>
+                    <span class="tech-badge">Python Core</span>
+                    <span class="tech-badge">NLTK</span>
+                    <span class="tech-badge">Tkinter HUD</span>
+                </div>
+            </div>
+
+            <!-- PROJECT 2 -->
+            <div class="card">
+                <div class="card-tag">SecOps // Hardware Infrastructure</div>
+                <h3 class="card-title">"Shadow" Zero-Trust Network Range</h3>
+                <p class="card-text">
+                    Deployed an enterprise-grade local network core using a refurbished Cisco Catalyst 3850 hardware switch. Architected custom inter-VLAN zoning restrictions, 802.1Q encapsulation trunk links, out-of-band serial Link administration, and physical port hardening using hardware sticky MAC address policies.
+                </p>
+                <div>
+                    <span class="tech-badge">Cisco IOS CLI</span>
+                    <span class="tech-badge">Layer 2/3 Switching</span>
+                    <span class="tech-badge">Wireshark</span>
+                    <span class="tech-badge">VM Kali Linux</span>
+                </div>
+            </div>
+
+            <!-- PROJECT 3 -->
+            <div class="card">
+                <div class="card-tag">Data Engineering // Analytics</div>
+                <h3 class="card-title">SPSS Local Pipeline Bypass Engine</h3>
+                <p class="card-text">
+                    Developed a modular Python data parser utility to enforce absolute data sovereignty over behavioral statistic tracking workloads. Replaced subscription cloud-dependent analytical software dependencies with localized array tokenization and visualization engines.
+                </p>
+                <div>
+                    <span class="tech-badge">Pandas Matrix</span>
+                    <span class="tech-badge">NumPy Arrays</span>
+                    <span class="tech-badge">Matplotlib Layouts</span>
+                </div>
+            </div>
+        </section>
+
+        <h2 id="systems-synthesis">🧠 Academic Research & Systems Synthesis</h2>
+        <section class="grid">
+            <!-- PAPER 1 -->
+            <div class="card">
+                <div class="card-tag">Psychobiology ∩ CompSci</div>
+                <h3 class="card-title">The Persistent Loop: PTSD Analysis</h3>
+                <p class="card-text">
+                    Models physiological trauma response states as un-terminable infinite runtime exceptions using the ICD-11 DSO framework. Evaluates how continuous environmental threat inputs weaken hippocampal filing links and completely downregulate prefrontal cortex executive processing brakes.
+                </p>
+            </div>
+
+            <!-- PAPER 2 -->
+            <div class="card">
+                <div class="card-tag">Data Integrity ∩ Theater</div>
+                <h3 class="card-title">The Lossy Compression of Trauma</h3>
+                <p class="card-text">
+                    Deconstructs curated documentary theater formats using digital signal processing algorithms (JPEG/MP3 compression). Analyzes the systematic formatting artifacts introduced when raw human experience variables are pruned into low-resolution public dockets.
+                </p>
+            </div>
+
+            <!-- PAPER 3 -->
+            <div class="card">
+                <div class="card-tag">Human Systems ∩ Operations</div>
+                <h3 class="card-title">Dismantling the Mirage: Runtime Controls</h3>
+                <p class="card-text">
+                    Positions tactical decision-making frameworks (OODA Loops, Operational Risk Management) as defensive runtime protocols designed to intercept and override system-degrading family script illusions, establishing reality-biased communication paths.
+                </p>
+            </div>
+        </section>
+
+        <h2 id="metrics">📊 Core Calibration Metrics</h2>
+        <section class="card">
+            <ul style="list-style-type: square; padding-left: 1.2rem; margin: 0; color: var(--text-muted);">
+                <li style="margin-bottom: 0.5rem;"><strong>Academic Node:</strong> Mt. San Jacinto College (Dual Degree Track: CS & Psychology)</li>
+                <li style="margin-bottom: 0.5rem;"><strong>System Calibration:</strong> Cumulative 4.0 GPA across complex multi-disciplinary loads.</li>
+                <li style="margin-bottom: 0.5rem;"><strong>Operational Load Capability:</strong> Verified threshold of 19+ concurrent credit units per session.</li>
+                <li><strong>Strategic Experience:</strong> Dole Caregiver Fellow (California Representative) — translating macro metrics into federal legislative reform frameworks.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
